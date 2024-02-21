@@ -1,0 +1,35 @@
+@import url('vars.css');
+@import url('backgrounds.css');
+@import url('fonts.css');
+@import url('spacings.css');
+@import url('layout.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: -webkit-fill-available;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Press Start 2P', sans-serif; */
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  /* background: var(--secondary-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: (--primary-color);
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}

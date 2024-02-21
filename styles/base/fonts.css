@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.text-grey-dark {
+  color: var(--secondary-color);
+}
+
+.text-white {
+  color: var(--primary-color);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.leading-lg {
+  line-height: 1.5;
+}
+
+/* Text sizes */
+
+.text-3 {
+  font-size: 0.75rem;
+}
+
+.text-xs {
+  font-size: 1.125rem;
+}
+
+.text-24 {
+  font-size: 6rem;
+}
+
+.text-base {
+  font-size: var(--base-size);
+}
+
+.text-sm {
+  font-size: 1.5rem;
+}
+
+.text-8 {
+  font-size: var(--base-size-2);
+}
+
+.text-12 {
+  font-size: 3rem;
+}
+.text-16 {
+  font-size: 4rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-light {
+  font-weight: 300;
+}

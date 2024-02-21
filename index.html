@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Pig Game</title>
+</head>
+
+<body class="flex flex-col">
+  <div>
+    <button class="btn flex items-center text-base border-none py-2 px-4 cursor-pointer bg-white btn--new">🔄 New
+      game</button>
+  </div>
+  <div class="p-8 flex items-center justify-center w-full">
+    <main
+      class="flex flex-col ite md:flex-row relative rounded-2 overflow-hidden gap-12 md:gap-0 md:shadow md:h-60dvh lg:w-md w-full">
+      <section
+        class="player--active flex flex-col items-center p-8 md:p-20 player player--0 rounded-2 md:rounded-none gap-2">
+        <h2 class="flex flex-col name text-uppercase text-8 md:text-12 relative text-center" id="name--0"><span
+            class="current-turn text-8">🎲</span> Player 1
+        </h2>
+        <p class="score font-light m-auto text-red text-16 md:text-32" id="score--0">43</p>
+        <div class="current opacity-8 bg-red transition rounded-2 text-center text-white py-4 px-8">
+          <p class="current-label text-white text-uppercase md:w-65p text-base">Score</p>
+          <p class="current-score text-8" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="flex flex-col items-center p-8 md:p-20 player player--1 rounded-2 md:rounded-none gap-2">
+        <h2 class="flex flex-col name font-light text-uppercase text-8 md:text-12 relative text-center" id="name--1">
+          <span class="current-turn text-8">🎲</span> Player 2
+        </h2>
+        <p class="score font-light m-auto text-red text-16 md:text-32" id="score--1">24</p>
+        <div class="current opacity-8 bg-red transition rounded-2 text-center text-white py-4 px-8">
+          <p class="current-label text-white text-uppercase md:w-65p text-base">Score</p>
+          <p class="current-score text-8" id="current--1">0</p>
+        </div>
+      </section>
+      <img src="./images/dice-5.png" alt="Playing dice"
+        class="dice absolute h-20 pos-center pin-l-50p pin-t-50p rounded-2 shadow" />
+
+    </main>
+  </div>
+  <div class="flex items-center gap-4">
+    <button class="btn flex text-base items-center cursor-pointer bg-white border-none py-2 px-4 btn--hold">📥
+      Hold</button>
+    <button class="btn flex text-base items-center cursor-pointer bg-white border-none py-2 px-4 btn--roll">🎲 Roll
+      dice</button>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

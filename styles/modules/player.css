@@ -1,0 +1,52 @@
+.player {
+  flex: 50%;
+  transition: all 0.75s;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.player--active .name {
+  font-weight: 700;
+}
+
+.current-turn {
+  visibility: hidden;
+}
+
+.player--active .current-turn {
+  visibility: visible;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+.player--active .current {
+  opacity: 1;
+}
+
+.player--winner,
+.player--winner .name,
+.player--winner .score {
+  color: var(--white);
+}
+
+.player--winner {
+  background-color: var(--green);
+}
+
+.player--winner .name {
+  font-weight: 700;
+}
+
+.player--winner .current,
+.player--winner .current-label {
+  color: var(--green);
+}
+
+.player--winner .current {
+  background: var(--white);
+}
